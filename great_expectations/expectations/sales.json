@@ -1,0 +1,35 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "sales",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_distinct_values_to_equal_set",
+      "kwargs": {
+        "column": "ship_mode",
+        "value_set": [
+          "First Class",
+          "Same Day",
+          "Second Class",
+          "Standard Class"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "DEFAULT_ASSET_NAME",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "super_store_sales",
+          "limit": 1000
+        },
+        "citation_date": "2022-12-12T17:36:26.775341Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.39"
+  }
+}
